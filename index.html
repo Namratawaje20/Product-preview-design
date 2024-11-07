@@ -137,6 +137,25 @@
             <button class="add-to-cart">Add to Cart</button>
         </div>
     </div>
+    <script>
+        // Function to change the main image
+        function changeImage(imagePath) {
+            document.getElementById('productImage').src = imagePath;
+        }
+
+        // Function to toggle description expansion
+        function toggleDescription() {
+            const desc = document.getElementById('description');
+            const moreBtn = document.getElementById('moreBtn');
+
+            if (moreBtn.innerText === 'Read More') {
+                desc.innerHTML += " A comfortable, durable chair with a sleek design, suitable for any modern decor.";
+                moreBtn.innerText = 'Read Less';
+            } else {
+                desc.innerHTML = "This elegant chair is designed for style and comfort. Perfect for any modern living space. <button id='moreBtn' onclick='toggleDescription()'>Read More</button>";
+            }
+        }
+    </script>
 
 </body>
 </html>
