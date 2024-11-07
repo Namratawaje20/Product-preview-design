@@ -116,6 +116,27 @@
 
 </head>
 <body>
-    
+    <div class="product-preview">
+        <div class="image-section">
+            <img id="productImage" src="imge1.jpg" alt="Product Image">
+            <div class="thumbnail-container">
+                <img src="imge1.jpg" class="thumbnail" onclick="changeImage('imge1.jpg')" alt="Thumbnail A">
+                <img src="imge2.jpg" class="thumbnail" onclick="changeImage('imge2.jpg')" alt="Thumbnail B">
+                <img src="imge3.jpg" class="thumbnail" onclick="changeImage('imge3.jpg')" alt="Thumbnail C">
+                <img src="imge4.jpg" class="thumbnail" onclick="changeImage('imge4.jpg')" alt="Thumbnail D">
+                <img src="imge5.jpg" class="thumbnail" onclick="changeImage('imge5.jpg')" alt="Thumbnail E">
+            </div>
+        </div>
+        <div class="details-section">
+            <h2>Elegant Chair</h2>
+            <div class="price">₹1500.00</div>
+            <p id="description" class="description">
+                This elegant chair is designed for style and comfort. Perfect for any modern living space.
+                <button id="moreBtn" onclick="toggleDescription()">Read More</button>
+            </p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
 </body>
 </html>
